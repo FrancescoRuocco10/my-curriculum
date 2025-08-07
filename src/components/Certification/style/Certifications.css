@@ -1,0 +1,92 @@
+.certifications-container {
+  padding: 60px 40px;
+  min-height: 100vh;
+  background-color: #CCDDEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.certifications-container img {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
+.certifications-central-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 60px;
+}
+
+.wave-grid-item {
+  background-color: rgb(39, 114, 160);
+  border-radius: 10px;
+  font-weight: bold;
+  color: #CCDDEA;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-align: center;
+  cursor: default;
+  animation: waveMotion 6s ease-in-out infinite alternate;
+  animation-delay: calc(var(--i) * 0.4s);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+  transform-origin: center center;
+}
+
+.wave-grid-item:hover {
+  z-index: 2;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes waveMotion {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-container img {
+    position: static;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .certifications-central-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .wave-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}

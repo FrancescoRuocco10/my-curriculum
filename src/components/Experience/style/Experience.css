@@ -1,0 +1,86 @@
+.experience-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  background-color: #2772A0;
+  gap: 20px;
+}
+
+.experience-text {
+  width: 50%;
+}
+
+.title1_Experience {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.subtitle_Experience {
+  font-size: 15px;
+  font-weight: bold;
+  color: #CCDDEA;
+}
+
+.mansione_Experience {
+  font-size: 20px;
+  font-weight: bold;
+  color: #CCDDEA;
+}
+
+.experience-image-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.experience-image-main {
+  max-width: 100%;
+  height: auto;
+  transform: rotateY(-15deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.swiper-wrapper-container {
+  width: 80%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .experience-text,
+  .experience-image-slider-container {
+    width: 100%;
+  }
+
+  .title1_Experience {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .mansione_Experience,
+  .sottotitolo_Experience {
+    text-align: center;
+  }
+
+  .experience-image-main {
+    transform: none;
+    /* rimuove la rotazione su mobile */
+  }
+
+  .swiper-wrapper-container {
+    width: 100%;
+  }
+}

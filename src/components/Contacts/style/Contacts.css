@@ -1,0 +1,125 @@
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #CCDDEA;
+  min-height: 50vh;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contacts-title {
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  margin-left: 0;
+  flex-shrink: 0;
+  width: auto;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+.contacts-list a {
+  color: #2772A0;
+  text-decoration: none;
+}
+
+.contacts-list a:hover {
+  text-decoration: underline;
+}
+
+.icona_linkedin {
+  width: 70px;
+  height: 70px;
+
+}
+
+.icona_gmail {
+  width: 70px;
+  height: 55px;
+
+}
+
+.icona_github {
+  width: 70px;
+  height: 70px;
+
+}
+
+.avatar {
+  width: 300px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.privacy-text {
+  margin-top: 40px;
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .contacts-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contacts-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 180px;
+  }
+
+  .contacts-item {
+    font-size: 20px;
+  }
+
+  .icona_linkedin {
+    width: 70px;
+    height: 70px;
+
+  }
+
+  .icona_gmail {
+    width: 70px;
+    height: 55px;
+
+  }
+
+  .icona_github {
+    width: 70px;
+    height: 70px;
+
+  }
+}

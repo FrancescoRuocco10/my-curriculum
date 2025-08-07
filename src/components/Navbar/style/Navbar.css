@@ -1,0 +1,92 @@
+.navbar {
+  font-family: 'Dancing Script', cursive;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.navbar--visible {
+  transform: translateY(0);
+}
+
+.navbar--hidden {
+  transform: translateY(-120%);
+}
+
+.navbar_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.navbar_list {
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar_list li a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.navbar_list li a:hover {
+  color: #34617f;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .navbar_list {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .navbar_list li a {
+    white-space: normal;
+  }
+}
