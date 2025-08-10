@@ -76,7 +76,6 @@ function About_Me() {
           <img src={immagine10} alt="c++" className="image1" />
           <img src={immagine11} alt="php" className="image1" />
           <img src={immagine12} alt="python" className="image1" />
-          <img src={immagine13} alt="react" className="image1" />
 
           <br /><br />
 
