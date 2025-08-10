@@ -13,12 +13,11 @@ import immagine9 from './image/Css.png';
 import immagine10 from './image/Javascript.png';
 import immagine11 from './image/Php.png';
 import immagine12 from './image/Python.png';
-import immagine13 from './image/React.png';
-import immagine14 from './image/Tailwind.png';
-import immagine15 from './image/Three.png';
-import immagine16 from './image/React.png';
-import immagine17 from './image/Vue.png';
-import immagine18 from './image/Json.png';
+import immagine13 from './image/Tailwind.png';
+import immagine14 from './image/Three.png';
+import immagine15 from './image/React.png';
+import immagine16 from './image/Vue.png';
+import immagine17 from './image/Json.png';
 
 function About_Me() {
   return (
@@ -80,11 +79,11 @@ function About_Me() {
           <br /><br />
 
           <p className="title2">OTHER SKILLS (LIBRARIES, FRAMEWORKS, DATA EXCHANGE)</p>
-          <img src={immagine15} alt="three" className="image1" />
-          <img src={immagine16} alt="react" className="image1" />
-          <img src={immagine17} alt="vue" className="image1" />
-          <img src={immagine18} alt="json" className="image1" />
-          <img src={immagine14} alt="tailwind" className="image1" />
+          <img src={immagine14} alt="three" className="image1" />
+          <img src={immagine15} alt="react" className="image1" />
+          <img src={immagine16} alt="vue" className="image1" />
+          <img src={immagine17} alt="json" className="image1" />
+          <img src={immagine13} alt="tailwind" className="image1" />
 
         </div>
 
