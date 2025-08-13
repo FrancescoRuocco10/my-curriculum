@@ -1,4 +1,4 @@
-# <img src="./image/Logo_favicon.png" alt="logo del sito" width="50" height="50" /> Curriculum Vitae Digitale - Sito Web Personale
+# <img src="./image/Logo_favicon.png" alt="logo del sito" width="50" height="50" /> Curriculum Vitae Digitale - Sito Web Personale [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ![Anteprima della homepage](Homepage.JPG)
 
